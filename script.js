@@ -19,7 +19,6 @@ const winners = [
 ];
 
 const startNewGame = () => {
-  console.log("new");
   winnerContainer.classList.add("hide");
   ticTacContainer.classList.remove("hide");
   button.forEach((button) => {
@@ -42,7 +41,6 @@ const checkWinner = () => {
 
     if (pos0Val != "" && pos1Val != "" && pos2Val != "") {
       if (pos0Val === pos1Val && pos1Val === pos2Val) {
-        console.log(`Winner is ${pos0Val}`);
         displayWinner(pos0Val);
       }
     }
