@@ -25,6 +25,7 @@ const startNewGame = () => {
     button.innerText = "";
     button.disabled = false;
   });
+  turnX = true;
 };
 
 const displayWinner = (pos0Val) => {
